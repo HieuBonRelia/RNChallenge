@@ -1,0 +1,52 @@
+diff --git a/node_modules/@react-native-community/blur/android/build.gradle b/node_modules/@react-native-community/blur/android/build.gradle
+index b401cb8..7b7a919 100644
+--- a/node_modules/@react-native-community/blur/android/build.gradle
++++ b/node_modules/@react-native-community/blur/android/build.gradle
+@@ -9,7 +9,6 @@ buildscript {
+     if (project == rootProject) {
+         repositories {
+             google()
+-            jcenter()
+         }
+ 
+         dependencies {
+@@ -37,11 +36,11 @@ android {
+ 
+ repositories {
+     google()
+-    jcenter()
++    maven { url 'https://jitpack.io' }
+ }
+ 
+ dependencies {
+     //noinspection GradleDynamicVersion
+     implementation 'com.facebook.react:react-native:+'
+-    implementation 'com.eightbitlab:blurview:1.6.6'
++    implementation 'com.github.Dimezis:BlurView:version-1.6.6'
+ }
+diff --git a/node_modules/@react-native-community/blur/android/build/intermediates/aar_metadata/debug/aar-metadata.properties b/node_modules/@react-native-community/blur/android/build/intermediates/aar_metadata/debug/aar-metadata.properties
+new file mode 100644
+index 0000000..d8560bd
+--- /dev/null
++++ b/node_modules/@react-native-community/blur/android/build/intermediates/aar_metadata/debug/aar-metadata.properties
+@@ -0,0 +1,2 @@
++aarFormatVersion=1.0
++aarMetadataVersion=1.0
+diff --git a/node_modules/@react-native-community/blur/android/build/intermediates/incremental/mergeDebugShaders/merger.xml b/node_modules/@react-native-community/blur/android/build/intermediates/incremental/mergeDebugShaders/merger.xml
+new file mode 100644
+index 0000000..ba1193e
+--- /dev/null
++++ b/node_modules/@react-native-community/blur/android/build/intermediates/incremental/mergeDebugShaders/merger.xml
+@@ -0,0 +1,2 @@
++<?xml version="1.0" encoding="utf-8"?>
++<merger version="3"><dataSet config="main" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/khatran/Desktop/Working/RNChallange/node_modules/@react-native-community/blur/android/src/main/shaders"/></dataSet><dataSet config="debug" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/khatran/Desktop/Working/RNChallange/node_modules/@react-native-community/blur/android/src/debug/shaders"/></dataSet></merger>
+\ No newline at end of file
+diff --git a/node_modules/@react-native-community/blur/android/build/intermediates/incremental/packageDebugAssets/merger.xml b/node_modules/@react-native-community/blur/android/build/intermediates/incremental/packageDebugAssets/merger.xml
+new file mode 100644
+index 0000000..a2c7aae
+--- /dev/null
++++ b/node_modules/@react-native-community/blur/android/build/intermediates/incremental/packageDebugAssets/merger.xml
+@@ -0,0 +1,2 @@
++<?xml version="1.0" encoding="utf-8"?>
++<merger version="3"><dataSet config="main" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/khatran/Desktop/Working/RNChallange/node_modules/@react-native-community/blur/android/src/main/assets"/><source path="/Users/khatran/Desktop/Working/RNChallange/node_modules/@react-native-community/blur/android/build/intermediates/shader_assets/debug/out"/></dataSet><dataSet config="debug" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/khatran/Desktop/Working/RNChallange/node_modules/@react-native-community/blur/android/src/debug/assets"/></dataSet></merger>
+\ No newline at end of file
